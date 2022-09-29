@@ -4,15 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="6dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_siair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentRight="true"
+        android:text="SIAIR"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <Spinner
+        android:id="@+id/sp_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_nama"
+        android:layout_toleftOf="@+id/tv_siair"
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerinparent="true"
+        android:src="@drawable/img"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <TextView
+        android:id="@+id/tv_nomor_penerbangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SI 2901"
+        android:layout_above=
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
